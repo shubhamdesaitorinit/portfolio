@@ -1,0 +1,51 @@
+.keepInTouch {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  
+    span {
+      color: #6ee7b7; /* highlight your specialty */
+      font-weight: bold;
+    }
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fff;
+      background-color: #222;
+      border-radius: 4px;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease-in-out;
+  
+      &:hover {
+        background-color: #333;
+      }
+  
+      svg {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+  

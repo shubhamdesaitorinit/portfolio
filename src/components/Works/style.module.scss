@@ -1,0 +1,85 @@
+.works {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #000; /* Black background */
+    color: #fff;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Subtitle under "All Creative Works." */
+  .subtitle {
+    color: #bbb;
+    margin-bottom: 2rem;
+  
+    a {
+      color: #6ee7b7; /* Accent color */
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  /* Layout for the project cards */
+  .projectsContainer {
+    /* Use a responsive grid layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Individual card styling */
+  .projectCard {
+    background-color: #111;          /* Dark card background */
+    border: 1px solid #333;         /* Subtle border */
+    border-radius: 8px;
+    overflow: hidden;
+  
+    /* Fade-in + slide-up animation (initial state) */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  
+    /* When Intersection Observer adds .show, animate in */
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    /* If the entire image should be clickable: */
+    a.imageLink,
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    /* Card text content */
+    .cardContent {
+      padding: 1rem;
+  
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #fff;
+      }
+  
+      .tags {
+        color: #6ee7b7; /* Accent color for tags */
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+  
+      p {
+        color: #bbb;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  

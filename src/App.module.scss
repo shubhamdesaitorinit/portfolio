@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  /* We can omit background here if set in :root already */
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+/* #root can span the full page */
+#root {
+  min-height: 100vh;
+  /* text-align: center; // optional */
+}
+
+/* Our container for max-width layout */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
