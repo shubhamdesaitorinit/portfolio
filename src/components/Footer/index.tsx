@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
         Designed and developed by <strong>Shubham Desai</strong>.
       </p>
       <p>
-        Built with <strong>React.js &amp;  SCSS</strong>. Hosted on{' '}
-        <strong>Render</strong>.
+        Built with <strong>React.js &amp; SCSS</strong>. Hosted on{" "}
+        <strong>Github Pages</strong>.
       </p>
     </footer>
   );
