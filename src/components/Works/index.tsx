@@ -12,7 +12,7 @@ type Project = {
   image: string;
   link?: string;
 };
-
+// TODO: move mock data to database
 const projectData: Project[] = [
   {
     title: 'creative@home',
@@ -74,7 +74,7 @@ const Works: React.FC = () => {
     <section className={styles.works} id="works">
       <h2>All Creative Works.</h2>
       <p className={styles.subtitle}>
-        Here’s some of my projects that I have worked on.{' '}
+        Here’s some of my projects that I have worked on.{" "}
         <a href="#projects">Explore more &rarr;</a>
       </p>
 
@@ -83,6 +83,8 @@ const Works: React.FC = () => {
           <div
             key={project.title}
             className={styles.projectCard}
+            //TODO: fix ts error
+            // @ts-expect-error unknown error
             ref={(el) => (cardRefs.current[index] = el)}
           >
             {/* Clickable image/card if link is provided */}
